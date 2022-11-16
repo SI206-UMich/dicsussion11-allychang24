@@ -39,7 +39,7 @@ def create_species_table(cur, conn):
 # TASK 1
 # CREATE TABLE FOR PATIENTS IN DATABASE
 def create_patients_table(cur, conn):
-    cur.execute("drop table if exists Patients")
+    cur.execute("DROP TABLE IF EXISTS Patients")
     cur.execute("create table Patients(pet_id INTEGER PRIMARY KEY, name TEXT, species_id NUMBER, age INTEGER, cuteness INTEGER, aggressiveness INTEGER)")
     conn.commit()
 
